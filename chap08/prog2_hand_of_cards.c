@@ -21,6 +21,7 @@ int main() {
       handr = random() % 13;
       hands = rand() % 4;
     } while (inhand[hands][handr]);
+    inhand[hands][handr] = true;
 
     printf("%s%s ", ranks[handr], suits[hands]);
   }
