@@ -15,7 +15,14 @@ int main() {
   }
 
   char *txt = (foundDup == true) ? "duplicate digits" : "no duplicate digits";
-  printf("%s", txt);
+  printf("%s\n", txt);
+  if (foundDup){
+    for (int i = 0; i<10; i++) {
+      if (nums[i]) {
+        printf("%d ", i);
+      }
+    }
+  }
   printf("\n");
   return 0;
 }
