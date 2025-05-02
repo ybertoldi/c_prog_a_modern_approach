@@ -10,7 +10,6 @@ int partition(char arr[], int l, int r) {
   int j = r;
 
   while (i < j) {
-
     while (arr[i] <= p && i <= r - 1) {
       i++;
     }
@@ -32,7 +31,6 @@ void quicksort(char arr[], int l, int r) {
   }
 
   int pivot = partition(arr, l, r);
-  quicksort(arr, l, pivot-1);
-  quicksort(arr, pivot+1, r);
+  quicksort(arr, l, pivot - 1);
+  quicksort(arr, pivot + 1, r);
 }
-

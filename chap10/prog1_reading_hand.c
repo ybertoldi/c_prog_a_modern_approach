@@ -34,7 +34,7 @@ void read_cards() {
     int rank_i, suit_i;
 
     printf("Enter a card: ");
-    scanf("%s", txt);
+    scanf("%s\n", txt);
 
     for (int i = 0; txt[i] != '\0'; i++) {
       if (!isalnum(txt[i])) {
