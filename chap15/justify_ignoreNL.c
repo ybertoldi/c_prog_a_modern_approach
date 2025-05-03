@@ -97,8 +97,9 @@ void printline() {
     word_pos = 0;
     char_count = 0;
   } else if (status == REACHED_LINE_LIMIT) {
+
     for (int i = 0; i < word_pos - 1; i++) {
-      printf("%s ", words[i]);
+      printf("%s", words[i]);
       free(words[i]);
     }
     printf("\n");
